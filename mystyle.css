@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/mySlam/Kiss.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.book{
+  margin-top: 600px;
+  position: relative;
+  width: 350px;
+  height: 600px;
+  transition: transform 0.5s;
+}
+
+.paper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+
+.front{
+  background-color: pink;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.back{
+  background-color: lightpink;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.front{
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.back{
+  z-index: 0;
+}
+
+.front-content, 
+.back-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-content{
+  transform: rotateY(180deg)
+}
+
+.flipped .front,
+.flipped .back{
+  transform: rotateY(-180deg)
+}
+
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.5s;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:hover{
+  color: #636363;
+}
+
+i{
+  font-size: 50px;
+  color: white;
+}
+
+#p1{
+  z-index: 3;
+}
+
+#p2{
+  z-index: 2;
+}
+
+#p3{
+  z-index: 1;
+}
+
+
+h1{
+  font-family: cursive;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.slam-input,
+.favslam-input{
+  display: block;
+  margin: 0 auto 10px;
+  background-color: white;
+  color: black;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  
+}
+
+
+.slam-input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.favslam-input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.slam-label,
+.favslam-label{
+  margin-bottom: 5px;
+  display: block;
+  color: white; 
+}
+
+
+input[type="file"] {
+  display: none;
+}
+
+
+.custom-file-input {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.custom-file-label {
+  display: block;
+  margin-top: 10px; 
+  text-align: center;
+  text-decoration: none;
+}
+
+
+
+.custom-file-label {
+  display: block;
+  margin-top: 10px;
+  color: white;
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+}
+
+#image-preview {
+  max-width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-label {
+  display: block;
+  margin-top: 10px; 
+}
+
+#text-container {
+  color: white;
+  text-align: left;
+  font-family: courier;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+
+
+#p1 .back{
+  background-image: url('/mySlam/🩷.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+#p1 .front{
+  background-image: url("/mySlam/BURN BOOK COVER… ON WEDNESDAYS WE WEAR PINK 🎀🛍.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#p3 .back{
+  background-image: url("/mySlam/Thank you, next wallpaper.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#p3 .front{
+  background-image: url("/mySlam/4d13c146-28af-4718-b02c-f35d028a4899.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+label {
+  margin-left: 5px;
+  text-align: right;
+  color: black; 
+  font-family: courier; 
+  font-weight: bolder;
+}
+
+
+
+
+
